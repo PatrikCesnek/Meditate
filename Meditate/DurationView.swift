@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct DurationView: View {
-    @State private var duration = 0
+    @State var duration = 0
+    
     static let durations = [1, 3, 5, 10, 15, 20, 25, 30, 45, 60]
+    
     var body: some View {
         ZStack {
             Color(red: 0.20, green: 0.88, blue: 0.42)
@@ -25,6 +27,16 @@ struct DurationView: View {
                     .foregroundColor(.white)
                     .font(.title)
                 }
+                .padding()
+                
+                Button("Select") {
+                    self.duration = duration
+                }
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .padding(.horizontal)
+                .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                .padding(.bottom, 5)
                 
             }
         }.edgesIgnoringSafeArea(.all)

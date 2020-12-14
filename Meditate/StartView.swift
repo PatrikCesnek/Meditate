@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct StartView: View {
-    var duration = DurationView()
+    var durationView = DurationView()
+    let secondsTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
     
+    @State var secondsRemaining = 10
+
+    @State private var isActive = false
+
     var body: some View {
         ZStack {
             Color(red: 0.20, green: 0.88, blue: 0.42)
             VStack {
-                Text("0 : 00 : 00")
+//                Text("\(hoursRemaining) : \(minutesRemaining) : \(secondsRemaining)")
+                Text("\(secondsRemaining)")
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .padding()
                 Button(action: {
                     //Start the counter
+                    isActive.toggle()
                 }, label: {
                     Text("Start")
                         .font(.largeTitle)
@@ -28,6 +36,13 @@ struct StartView: View {
                         .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                         .padding(.bottom, 5)
                 })
+            }
+            .onReceive(secondsTimer) { _ in
+                if isActive {
+                    if secondsRemaining > 0 {
+                        secondsRemaining -= 1
+                    }
+                }
             }
         }
         .edgesIgnoringSafeArea(.all)
