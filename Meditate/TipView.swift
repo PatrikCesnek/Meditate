@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct TipView: View {
+    var tips = ["Try to meditate at least once a day", "Be patient and treat yourself with kindness, as it can be difficult to learn how to pay attention to your breath and sit for meditation.", "Meditating for just five to 10 minutes each day can help reduce stress.","Go into your meditation practice without expectations.", "Choose a time to meditate, and stick to it.", "Create a designated space to meditate.", "Take a couple moments to wind down and clear your mind.", "Start with a few deep breaths to calm the body.", "Try not to fidget or move too much during meditation.", "Just breathe.", "Be kind to yourself — some days will be easier than others.", "Slowly reintroduce movement after meditating.", "Acknowledge your emotions.", "Come back the next day, even if you don't feel like it.", "Try to stick with it for 21 days to create a habbit."]
+    
     var body: some View {
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(0 ..< tips.count) { item in
+            Text(tips[item])
         }
+        
         .navigationBarTitle(Text("Tips"), displayMode: .inline)
     }
 }

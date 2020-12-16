@@ -13,6 +13,8 @@ struct ContentView: View {
             ZStack {
                 Color(red: 0.20, green: 0.88, blue: 0.42)
                 .ignoresSafeArea(edges: .all)
+                DrawingView()
+
                 VStack {
                     NavigationLink("Start", destination: StartView())
                         .padding(.horizontal)
