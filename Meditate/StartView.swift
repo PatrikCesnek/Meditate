@@ -13,15 +13,19 @@ struct StartView: View {
 
     
     @State var secondsRemaining = 10
+    @State private var duration = 0
+    static let durations = [1, 3, 5, 10, 15, 20, 25, 30, 45, 60]
+
 
     @State private var isActive = false
 
     var body: some View {
         ZStack {
             Color(red: 0.20, green: 0.88, blue: 0.42)
+            DrawingView()
             VStack {
 //                Text("\(hoursRemaining) : \(minutesRemaining) : \(secondsRemaining)")
-                Text("\(secondsRemaining)")
+                Text("\(duration)")
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .padding()
@@ -46,7 +50,23 @@ struct StartView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
-        .navigationBarItems(trailing: NavigationLink("Duration", destination: DurationView())).foregroundColor(.white)
+        .navigationBarItems(trailing: NavigationLink("Duration", destination: ZStack {
+            Color(red: 0.20, green: 0.88, blue: 0.42)
+                .edgesIgnoringSafeArea(.all)
+
+            Picker("Choose duration", selection: $duration) {
+                ForEach(0..<Self.durations.count) {
+                    if Self.durations[$0] != 1 {
+                        Text("\(Self.durations[$0]) minutes")
+                    } else {
+                        Text("\(Self.durations[$0]) minute")
+                    }
+                }
+                .foregroundColor(.white)
+                .font(.title)
+            }
+        }
+        )).foregroundColor(.white)
     }
 }
 

@@ -14,6 +14,7 @@
 		59BB1F6025876B410061587F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F5F25876B410061587F /* StartView.swift */; };
 		59BB1F63258770340061587F /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F62258770340061587F /* TipView.swift */; };
 		59BB1F66258771950061587F /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F65258771950061587F /* DurationView.swift */; };
+		59BB1F692587B23E0061587F /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F682587B23E0061587F /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		59BB1F5F25876B410061587F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		59BB1F62258770340061587F /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		59BB1F65258771950061587F /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
+		59BB1F682587B23E0061587F /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				59BB1F51258767190061587F /* ContentView.swift */,
 				59BB1F62258770340061587F /* TipView.swift */,
 				59BB1F5F25876B410061587F /* StartView.swift */,
+				59BB1F682587B23E0061587F /* DrawingView.swift */,
 				59BB1F65258771950061587F /* DurationView.swift */,
 				59BB1F532587671A0061587F /* Assets.xcassets */,
 				59BB1F582587671A0061587F /* Info.plist */,
@@ -150,6 +153,7 @@
 				59BB1F63258770340061587F /* TipView.swift in Sources */,
 				59BB1F6025876B410061587F /* StartView.swift in Sources */,
 				59BB1F66258771950061587F /* DurationView.swift in Sources */,
+				59BB1F692587B23E0061587F /* DrawingView.swift in Sources */,
 				59BB1F52258767190061587F /* ContentView.swift in Sources */,
 				59BB1F50258767190061587F /* MeditateApp.swift in Sources */,
 			);
