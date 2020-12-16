@@ -75,5 +75,6 @@ struct StartView_Previews: PreviewProvider {
         NavigationView {
             StartView()
         }
+        
     }
 }

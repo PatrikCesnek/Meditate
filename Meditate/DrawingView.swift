@@ -64,17 +64,19 @@ struct DrawingView: View {
 
             VStack {
                 HStack {
+                    Spacer(minLength: 400)
+
                     Spirograph(innerRadius: 135, outerRadius: 75, distance: 120, amount: 1)
                         .stroke(Color.white, lineWidth: 5)
                         .frame(width: 300, height: 300)
-                    Spacer(minLength: 400)
                 }
                 Spacer()
                 HStack {
-                    Spacer(minLength: 400)
                     Spirograph(innerRadius: 135, outerRadius: 75, distance: 120, amount: 1)
                         .stroke(Color.white, lineWidth: 5)
                         .frame(width: 300, height: 300)
+                    Spacer(minLength: 400)
+
                 }
             }
             
