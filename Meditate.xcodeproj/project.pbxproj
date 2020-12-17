@@ -15,6 +15,8 @@
 		59BB1F63258770340061587F /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F62258770340061587F /* TipView.swift */; };
 		59BB1F66258771950061587F /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F65258771950061587F /* DurationView.swift */; };
 		59BB1F692587B23E0061587F /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F682587B23E0061587F /* DrawingView.swift */; };
+		59BB1F6D258A62D60061587F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F6C258A62D60061587F /* CardView.swift */; };
+		59BB1F70258A71700061587F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F6F258A71700061587F /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		59BB1F62258770340061587F /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		59BB1F65258771950061587F /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
 		59BB1F682587B23E0061587F /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		59BB1F6C258A62D60061587F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		59BB1F6F258A71700061587F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				59BB1F4F258767190061587F /* MeditateApp.swift */,
 				59BB1F51258767190061587F /* ContentView.swift */,
 				59BB1F62258770340061587F /* TipView.swift */,
+				59BB1F6C258A62D60061587F /* CardView.swift */,
+				59BB1F6F258A71700061587F /* Card.swift */,
 				59BB1F5F25876B410061587F /* StartView.swift */,
 				59BB1F682587B23E0061587F /* DrawingView.swift */,
 				59BB1F65258771950061587F /* DurationView.swift */,
@@ -150,12 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59BB1F6D258A62D60061587F /* CardView.swift in Sources */,
 				59BB1F63258770340061587F /* TipView.swift in Sources */,
 				59BB1F6025876B410061587F /* StartView.swift in Sources */,
 				59BB1F66258771950061587F /* DurationView.swift in Sources */,
 				59BB1F692587B23E0061587F /* DrawingView.swift in Sources */,
 				59BB1F52258767190061587F /* ContentView.swift in Sources */,
 				59BB1F50258767190061587F /* MeditateApp.swift in Sources */,
+				59BB1F70258A71700061587F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
