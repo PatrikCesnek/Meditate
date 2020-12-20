@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct StartView: View {
-    var durationView = DurationView()
     let secondsTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     
@@ -34,17 +33,24 @@ struct StartView: View {
                         .foregroundColor(.white)
                         .padding()
                 } else {
-                    Picker("Choose duration", selection: $duration) {
-                        ForEach(0..<Self.durations.count) {
-                            if Self.durations[$0] != 1 {
-                                Text("\(Self.durations[$0]) minutes")
-                                    
-                            } else {
-                                Text("\(Self.durations[$0]) minute")
-                                    
-                            }
-                        }.foregroundColor(.white)
-                        .font(.title)
+                    VStack {
+                        Text("How long do you want to meditate?")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .frame(minWidth: 200, idealWidth: 200, maxWidth: 300, minHeight: 50, idealHeight: 80, maxHeight: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 5, x: 1, y: 1)
+                        Picker("Choose duration", selection: $duration) {
+                            ForEach(0..<Self.durations.count) {
+                                if Self.durations[$0] != 1 {
+                                    Text("\(Self.durations[$0]) minutes")
+                                        
+                                } else {
+                                    Text("\(Self.durations[$0]) minute")
+                                        
+                                }
+                            }.foregroundColor(.white)
+                            .font(.title)
+                        }
                     }
                 }
                 

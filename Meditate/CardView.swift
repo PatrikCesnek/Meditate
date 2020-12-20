@@ -20,10 +20,10 @@ struct CardView: View {
     
     
     var body: some View {
-        ZStack {
-            Color(red: 0.20, green: 0.88, blue: 0.42)
-                .edgesIgnoringSafeArea(.all)
-            DrawingView()
+//        ZStack {
+//            Color(red: 0.20, green: 0.88, blue: 0.42)
+//                .edgesIgnoringSafeArea(.all)
+//            DrawingView()
 
             ZStack {
                 ZStack {
@@ -67,7 +67,7 @@ struct CardView: View {
             
             .animation(.spring())
         }
-    }
+//    }
 }
 
 struct CardView_Previews: PreviewProvider {

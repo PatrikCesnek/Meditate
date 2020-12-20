@@ -13,7 +13,6 @@
 		59BB1F572587671A0061587F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BB1F562587671A0061587F /* Preview Assets.xcassets */; };
 		59BB1F6025876B410061587F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F5F25876B410061587F /* StartView.swift */; };
 		59BB1F63258770340061587F /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F62258770340061587F /* TipView.swift */; };
-		59BB1F66258771950061587F /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F65258771950061587F /* DurationView.swift */; };
 		59BB1F692587B23E0061587F /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F682587B23E0061587F /* DrawingView.swift */; };
 		59BB1F6D258A62D60061587F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F6C258A62D60061587F /* CardView.swift */; };
 		59BB1F70258A71700061587F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F6F258A71700061587F /* Card.swift */; };
@@ -28,7 +27,6 @@
 		59BB1F582587671A0061587F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59BB1F5F25876B410061587F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		59BB1F62258770340061587F /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
-		59BB1F65258771950061587F /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
 		59BB1F682587B23E0061587F /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		59BB1F6C258A62D60061587F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		59BB1F6F258A71700061587F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				59BB1F6F258A71700061587F /* Card.swift */,
 				59BB1F5F25876B410061587F /* StartView.swift */,
 				59BB1F682587B23E0061587F /* DrawingView.swift */,
-				59BB1F65258771950061587F /* DurationView.swift */,
 				59BB1F532587671A0061587F /* Assets.xcassets */,
 				59BB1F582587671A0061587F /* Info.plist */,
 				59BB1F552587671A0061587F /* Preview Content */,
@@ -159,7 +156,6 @@
 				59BB1F6D258A62D60061587F /* CardView.swift in Sources */,
 				59BB1F63258770340061587F /* TipView.swift in Sources */,
 				59BB1F6025876B410061587F /* StartView.swift in Sources */,
-				59BB1F66258771950061587F /* DurationView.swift in Sources */,
 				59BB1F692587B23E0061587F /* DrawingView.swift in Sources */,
 				59BB1F52258767190061587F /* ContentView.swift in Sources */,
 				59BB1F50258767190061587F /* MeditateApp.swift in Sources */,
