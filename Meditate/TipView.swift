@@ -21,14 +21,10 @@ struct TipView: View {
             VStack {
                 ZStack {
                     ForEach(0..<tips.count, id: \.self) { index in
-                        var cardTip = Card(tip: tips[index])
+                        let cardTip = Card(tip: tips[index])
                         CardView(card: cardTip)
                             .stacked(at: index, in: self.cards.count)
                     }
-//                    .stacked(at: index, in: tips.count)
-//                    .allowsHitTesting(index == tips.count - 1)
-//                    .accessibility(hidden: index < tips.count - 1)
-                    
                 }
             }
         }

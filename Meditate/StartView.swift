@@ -15,7 +15,7 @@ struct StartView: View {
     @State private var duration = 0
     static let durations = [1, 3, 5, 10, 15, 20, 25, 30, 45, 60]
     @State private var isActive = false
-
+    
     var body: some View {
         ZStack {
             Color(red: 0.20, green: 0.88, blue: 0.42)
@@ -23,15 +23,19 @@ struct StartView: View {
             VStack {
 //                Text("\(hoursRemaining) : \(minutesRemaining) : \(secondsRemaining)")
                 if isActive {
-                    Text("\(secondsRemaining)")
-                        .onReceive(secondsTimer) { _ in
-                            if secondsRemaining > 0 {
-                                secondsRemaining -= 1
+                    ZStack {
+                        TimerCircleView()
+                            .frame(width: 400, height: 400)
+                        Text("\(secondsRemaining)")
+                            .onReceive(secondsTimer) { _ in
+                                if secondsRemaining > 0 {
+                                    secondsRemaining -= 1
+                                }
                             }
-                        }
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                        .padding()
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .padding()
+                    }
                 } else {
                     VStack {
                         Text("How long do you want to meditate?")

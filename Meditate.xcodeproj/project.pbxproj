@@ -16,6 +16,7 @@
 		59BB1F692587B23E0061587F /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F682587B23E0061587F /* DrawingView.swift */; };
 		59BB1F6D258A62D60061587F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F6C258A62D60061587F /* CardView.swift */; };
 		59BB1F70258A71700061587F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F6F258A71700061587F /* Card.swift */; };
+		59D5CF1625A1EC0E00AB8DDD /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5CF1525A1EC0E00AB8DDD /* TimerCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		59BB1F682587B23E0061587F /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		59BB1F6C258A62D60061587F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		59BB1F6F258A71700061587F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		59D5CF1525A1EC0E00AB8DDD /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				59BB1F6C258A62D60061587F /* CardView.swift */,
 				59BB1F6F258A71700061587F /* Card.swift */,
 				59BB1F5F25876B410061587F /* StartView.swift */,
+				59D5CF1525A1EC0E00AB8DDD /* TimerCircleView.swift */,
 				59BB1F682587B23E0061587F /* DrawingView.swift */,
 				59BB1F532587671A0061587F /* Assets.xcassets */,
 				59BB1F582587671A0061587F /* Info.plist */,
@@ -159,6 +162,7 @@
 				59BB1F692587B23E0061587F /* DrawingView.swift in Sources */,
 				59BB1F52258767190061587F /* ContentView.swift in Sources */,
 				59BB1F50258767190061587F /* MeditateApp.swift in Sources */,
+				59D5CF1625A1EC0E00AB8DDD /* TimerCircleView.swift in Sources */,
 				59BB1F70258A71700061587F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
