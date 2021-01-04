@@ -17,14 +17,7 @@ struct CardView: View {
     @State private var offset = CGSize.zero
     @State private var feedback = UINotificationFeedbackGenerator()
     
-    
-    
     var body: some View {
-//        ZStack {
-//            Color(red: 0.20, green: 0.88, blue: 0.42)
-//                .edgesIgnoringSafeArea(.all)
-//            DrawingView()
-
             ZStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
@@ -40,11 +33,6 @@ struct CardView: View {
                             Text(card.tip)
                                 .font(.largeTitle)
                                 .foregroundColor(.white)
-                            
-        //                    if isShowingAnswer {
-        //                        Text(card.answer)
-        //                            .font(.title)
-        //                            .foregroundColor(.gray)
                             }
                         }
                 }

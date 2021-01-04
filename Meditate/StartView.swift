@@ -10,10 +10,13 @@ import SwiftUI
 struct StartView: View {
     let secondsTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    @State var secondsRemaining = 10
+    @State private var secondsRemaining = 10
+    @State private var secondsElapsed: Float = 0
     @State private var duration = 0
     static let durations = [1, 3, 5, 10, 15, 20, 25, 30, 45, 60]
     @State private var isActive = false
+    
+    @State private var fullTime = 0
     
     var body: some View {
         ZStack {
@@ -23,24 +26,40 @@ struct StartView: View {
 //                Text("\(hoursRemaining) : \(minutesRemaining) : \(secondsRemaining)")
                 if isActive {
                     ZStack {
-                        TimerCircleView()
-                            .frame(width: 400, height: 400)
+//                        TimerCircleView()
+//                            .frame(width: 400, height: 400)
+                        ZStack {
+                            Circle()
+                                .stroke(lineWidth: 20)
+                                .foregroundColor(.white)
+                            Circle()
+                                .trim(from: 0.0, to: (100 / CGFloat(fullTime)) * CGFloat(secondsElapsed) / (CGFloat(fullTime) / 10))
+                                .stroke(style: StrokeStyle(lineWidth: 16, lineCap: .round, lineJoin: .round))
+                                .rotation(Angle(degrees: -90))
+                                .foregroundColor(Color(red: 0.20, green: 0.88, blue: 0.42))
+                        }
+                        .padding(.horizontal)
+                        .frame(width: 350, height: 350)
+
                         Text("\(secondsRemaining)")
                             .onReceive(secondsTimer) { _ in
                                 if secondsRemaining > 0 {
                                     secondsRemaining -= 1
+                                    secondsElapsed += Float(fullTime) / 1000
+                                } else {
+                                    fullTime = 0
                                 }
                             }
                             .font(.largeTitle)
                             .foregroundColor(.white)
-                            .padding()
+//                            .padding()
                     }
                 } else {
                     VStack {
                         Text("How long do you want to meditate?")
                             .font(.title)
                             .foregroundColor(.white)
-                            .frame(minWidth: 200, idealWidth: 200, maxWidth: 300, minHeight: 50, idealHeight: 80, maxHeight: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(minWidth: 200, idealWidth: 200, maxWidth: 300, minHeight: 50, idealHeight: 80, maxHeight: 80)
                             .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 5, x: 1, y: 1)
                         Picker("Choose duration", selection: $duration) {
                             ForEach(0..<Self.durations.count) {
@@ -60,7 +79,9 @@ struct StartView: View {
                 Button(action: {
                     //Starts the counter
                     //Add *60 to seconds remaining so it would have correct options, this version is just for testing!!!
-                    secondsRemaining = Self.durations[duration]
+                    fullTime = Self.durations[duration]
+                    secondsRemaining = fullTime
+
                     isActive.toggle()
                 }, label: {
                     if !isActive {

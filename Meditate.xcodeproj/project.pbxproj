@@ -18,6 +18,7 @@
 		59BB1F70258A71700061587F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB1F6F258A71700061587F /* Card.swift */; };
 		59D5CF1625A1EC0E00AB8DDD /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5CF1525A1EC0E00AB8DDD /* TimerCircleView.swift */; };
 		59D5CF1925A3275900AB8DDD /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5CF1825A3275700AB8DDD /* TimerModel.swift */; };
+		59D5CF1C25A3A18600AB8DDD /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5CF1B25A3A18600AB8DDD /* StreakView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		59BB1F6F258A71700061587F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		59D5CF1525A1EC0E00AB8DDD /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 		59D5CF1825A3275700AB8DDD /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		59D5CF1B25A3A18600AB8DDD /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				59BB1F4F258767190061587F /* MeditateApp.swift */,
 				59BB1F51258767190061587F /* ContentView.swift */,
+				59D5CF1B25A3A18600AB8DDD /* StreakView.swift */,
 				59BB1F62258770340061587F /* TipView.swift */,
 				59BB1F6C258A62D60061587F /* CardView.swift */,
 				59BB1F6F258A71700061587F /* Card.swift */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D5CF1C25A3A18600AB8DDD /* StreakView.swift in Sources */,
 				59D5CF1925A3275900AB8DDD /* TimerModel.swift in Sources */,
 				59BB1F6D258A62D60061587F /* CardView.swift in Sources */,
 				59BB1F63258770340061587F /* TipView.swift in Sources */,
