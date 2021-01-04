@@ -9,7 +9,6 @@ import SwiftUI
 
 struct StartView: View {
     let secondsTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
     
     @State var secondsRemaining = 10
     @State private var duration = 0
