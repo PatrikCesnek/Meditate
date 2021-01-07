@@ -50,12 +50,9 @@ struct CardView: View {
                         offset = gesture.translation
                         feedback.prepare()
                     }
-                    
-            )
-            
+                )
             .animation(.spring())
         }
-//    }
 }
 
 struct CardView_Previews: PreviewProvider {

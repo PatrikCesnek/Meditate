@@ -26,8 +26,6 @@ struct StartView: View {
 //                Text("\(hoursRemaining) : \(minutesRemaining) : \(secondsRemaining)")
                 if isActive {
                     ZStack {
-//                        TimerCircleView()
-//                            .frame(width: 400, height: 400)
                         ZStack {
                             Circle()
                                 .stroke(lineWidth: 20)
@@ -52,7 +50,6 @@ struct StartView: View {
                             }
                             .font(.largeTitle)
                             .foregroundColor(.white)
-//                            .padding()
                     }
                 } else {
                     VStack {
@@ -60,7 +57,7 @@ struct StartView: View {
                             .font(.title)
                             .foregroundColor(.white)
                             .frame(minWidth: 200, idealWidth: 200, maxWidth: 300, minHeight: 50, idealHeight: 80, maxHeight: 80)
-                            .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 5, x: 1, y: 1)
+                            .shadow(color: .black, radius: 5, x: 1, y: 1)
                         Picker("Choose duration", selection: $duration) {
                             ForEach(0..<Self.durations.count) {
                                 if Self.durations[$0] != 1 {
