@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    var wishesExample = ["Wish", "Another Wish", "One fucking more"]
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -24,11 +26,12 @@ struct ContentView: View {
                         .padding(.horizontal)
                         .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                         .padding(.bottom, 5)
-                    NavigationLink("Streak", destination: Text("SteakView").padding())
+                    NavigationLink("Streak", destination: StreakView()
+                                    .padding())
                         .padding(.horizontal)
                         .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                         .padding(.bottom, 5)
-                    NavigationLink("Wish List", destination: Text("wishView").padding())
+                    NavigationLink("Wish List", destination: WishlistView(wishes: wishesExample).padding())
                         .padding(.horizontal)
                         .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                         .padding(.bottom, 5)

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StreakView: View {
     @State private var streakNumber = 0
+    var date = Date()
     
     var body: some View {
         ZStack {

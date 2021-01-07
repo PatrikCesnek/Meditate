@@ -23,9 +23,7 @@ struct Spirograph : Shape {
             b = a % b
             a = temp
         }
-        
         return a
-        
     }
     
     func path(in rect: CGRect) -> Path {
@@ -79,8 +77,6 @@ struct DrawingView: View {
 
                 }
             }
-            
-            
         }
         .edgesIgnoringSafeArea(.all)
     }
