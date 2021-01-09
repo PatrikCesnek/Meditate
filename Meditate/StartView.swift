@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct StartView: View {
+    var player: AVPlayer { AVPlayer.sharedDingPlayer }
     let secondsTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State private var secondsRemaining = 10
@@ -45,6 +47,7 @@ struct StartView: View {
                                     secondsRemaining -= 1
                                     secondsElapsed += Float(fullTime) / 1000
                                 } else {
+                                    player.play()
                                     fullTime = 0
                                 }
                             }
