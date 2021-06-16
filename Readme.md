@@ -1,4 +1,4 @@
-<H1>SwiftUI app to help with meditation</h1>
+<H1>SwiftUI app to help with meditation.</h1>
 
 <div>
   
