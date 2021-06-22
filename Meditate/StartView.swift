@@ -90,7 +90,6 @@ struct StartView: View {
                     .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                     .padding(.bottom, 5)
                 }
-                
             }
         }
         .edgesIgnoringSafeArea(.all)
