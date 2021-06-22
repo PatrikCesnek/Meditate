@@ -31,10 +31,11 @@ struct ContentView: View {
                         .padding(.horizontal)
                         .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
                         .padding(.bottom, 5)
-                    NavigationLink("Wish List", destination: WishlistView(wishes: wishesExample).padding())
-                        .padding(.horizontal)
-                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
-                        .padding(.bottom, 5)
+                    // Uncomment wish list for ability to add wishes
+//                    NavigationLink("Wish List", destination: WishlistView(wish: Wish.data[0]).padding())
+//                        .padding(.horizontal)
+//                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+//                        .padding(.bottom, 5)
                 }
                 .font(.title)
                 .foregroundColor(.white)
